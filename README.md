@@ -9,3 +9,8 @@ https://comdy.vn/angular/huong-dan-lap-trinh-angular-tu-dau-tung-buoc/
   ng new "my-new-angular-app"
   ## start App
   ng serve 
+
+# 3. Generate component
+  ng g component my-new-component
+
+
