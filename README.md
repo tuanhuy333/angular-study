@@ -47,4 +47,10 @@ Percent pipe
 Decimal pipe
 Slice pipe
 
+# 8. Routing
+const routes: Routes = [
+  {path:"home", component:HomeComponent},
+  {path:"contactus", component:ContactusComponent}
+];
+
 

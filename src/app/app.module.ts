@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { MyNewComponentComponent } from './my-new-component/my-new-component.component';
 import { AddTextDirective } from './add-text.directive';
 import { SqrtPipe } from './app.sqrt';
+import { HomeComponent } from './home/home.component';
+import { ContactusComponent } from './contactus/contactus.component';
 @NgModule({
   declarations: [
     AppComponent,
     MyNewComponentComponent,
     AddTextDirective,
-    SqrtPipe
+    SqrtPipe,
+    HomeComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
