@@ -16,4 +16,15 @@ export class AppComponent {
       "August", "September", "October", "November", "December"];
 
   showAge = false;
+
+  myClickFunction(event: any) {
+    // hiển thị thông báo
+    alert("Button is clicked!");
+    // hiện thị log ra console
+    console.log(event);
+  }
+
+  changeMonth(event1:any){
+    alert('Change dropdown.'+ event1);
+  }
 }

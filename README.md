@@ -23,3 +23,5 @@ https://viettuts.vn/angular7/data-binding-trong-angular7
   </select> 
 </div> 
 
+# 5. Event Binding
+

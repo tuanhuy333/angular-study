@@ -5,7 +5,7 @@
 </div>
 
 <div> Months :
-  <select>
+  <select (change)="changeMonth($event)">
     <option *ngFor = "let i of months">{{i}}</option>
   </select>
 </div>
@@ -14,5 +14,11 @@
 <div *ngIf="showAge; then condition1 else condition2"> Age = 18 </div>
 <ng-template #condition1>Hide Age.</ng-template>
 <ng-template #condition2>Show Age.</ng-template>
+
+<br/>
+
+<button (click) = "myClickFunction($event)">
+  Click Me
+</button>
 
 <router-outlet></router-outlet>
