@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-new-angular-app';
+
+
+  // write logic here !
+
+  // khai bao mang cac thang.
+  months = ["January", "February", "March", "April", "May", "June", "July",
+      "August", "September", "October", "November", "December"];
+
+  showAge = false;
 }

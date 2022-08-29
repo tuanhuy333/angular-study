@@ -1,5 +1,5 @@
 # FOLLOW THIS:
-https://comdy.vn/angular/huong-dan-lap-trinh-angular-tu-dau-tung-buoc/
+https://viettuts.vn/angular7/data-binding-trong-angular7
 
 # 1. Set up enviroment
   ## install angular/cli
@@ -13,4 +13,13 @@ https://comdy.vn/angular/huong-dan-lap-trinh-angular-tu-dau-tung-buoc/
 # 3. Generate component
   ng g component my-new-component
 
+# 4. If, For and DataBinding
+
+<div *ngIf="showAge"> Age = 18 </div>
+
+<div> Months : 
+  <select> 
+    <option *ngFor = "let i of months">{{i}}</option> 
+  </select> 
+</div> 
 
