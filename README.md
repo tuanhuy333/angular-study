@@ -32,5 +32,19 @@ myClickFunction(event: any) {
 # 6. Directive
 
 ng g directive addText 
+# 7. Pipe
+Ex:
+<h1>
+    Welcome to {{ title | uppercase}}!
+</h1>
+
+Lowercase pipe
+Uppercase pipe
+Date pipe
+Currency pipe
+Json pipe
+Percent pipe
+Decimal pipe
+Slice pipe
 
 

@@ -24,4 +24,8 @@ export class AppComponent {
   changeMonth(event1:any){
     alert('Change dropdown.'+ event1);
   }
+
+  todayDate = new Date();
+  jsonData = {name:'Vinh', age:'18', address:{huyen:'Me Linh', tp:'Ha Noi'}};
+  
 }

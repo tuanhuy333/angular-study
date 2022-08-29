@@ -1,6 +1,6 @@
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to {{ title | uppercase}}!
   </h1>
 </div>
 
@@ -24,5 +24,43 @@
 <div style = "text-align:center">
   <span appAddText > Welcome to {{title}}.</span>
 </div>
+
+<div style = "width:100%;">
+  <h1>Pipe</h1>
+  <div style = "width:40%;float:left;border:solid 1px black;">
+     <h1>Lowercase Pipe</h1>
+     <b>{{title | lowercase}}</b>
+     <h1>Currency Pipe</h1>
+     <b>{{6589.23 | currency:"USD"}}</b>
+     <br/>
+
+     <b>{{6589.23 | currency:"USD":true}}</b>
+     // Boolean true được sử dụng để lấy ký hiệu của tiền tệ.
+     <h1>Date pipe</h1>
+     <b>{{todayDate | date:'dd/MM/yyyy'}}</b>
+     <br/>
+
+     <b>{{todayDate | date:'shortTime'}}</b>
+     <h1>Decimal Pipe</h1>
+     <b>{{ 454.78787814 | number: '3.4-4' }}</b>
+     // 3 số trước dấu phẩy, 4 -4 số chữ số được hiển thị sau dấu phẩy.
+  </div>
+
+  <div style = "width:40%;float:left;border:solid 1px black;">
+     <h1>Json Pipe</h1>
+     <b>{{ jsonData | json }}</b>
+     <h1>Percent Pipe</h1>
+     <b>{{00.54565 | percent}}</b>
+     <h1>Slice Pipe</h1>
+     <b>{{months | slice:2:6}}</b>
+     // here 2 and 6 refers to the start and the end index
+  </div>
+</div>
+
+<h2>Custom Pipe</h2>
+<b>Can bac 2 cua 25 la: {{251 | sqrt}}</b>
+<br/>
+<b>Can bac 2 cua 729 la: {{729 | sqrt}}</b>
+
 
 <router-outlet></router-outlet>
