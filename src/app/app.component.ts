@@ -18,10 +18,7 @@ export class AppComponent {
   showAge = false;
 
   myClickFunction(event: any) {
-    // hiển thị thông báo
-    alert("Button is clicked!");
-    // hiện thị log ra console
-    console.log(event);
+    this.showAge = !this.showAge;
   }
 
   changeMonth(event1:any){

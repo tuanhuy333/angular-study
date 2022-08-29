@@ -25,3 +25,12 @@ https://viettuts.vn/angular7/data-binding-trong-angular7
 
 # 5. Event Binding
 
+myClickFunction(event: any) {
+    this.showAge = !this.showAge;
+  }
+
+# 6. Directive
+
+ng g directive addText 
+
+
