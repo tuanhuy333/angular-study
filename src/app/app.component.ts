@@ -37,7 +37,7 @@ export class AppComponent {
   ngOnInit() {
      this.todayDate1 = this.myservice.showTodayDate();
 
-     this.myservice.getData().subscribe((data) => {
+     this.myservice.getData().subscribe((data : any) => {
       Object.keys(data).forEach(key => {
 
         console.log(key, data[key]);
