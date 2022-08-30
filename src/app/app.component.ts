@@ -32,9 +32,19 @@ export class AppComponent {
 
 
   todayDate1: Date | undefined;
+  public persondata = [];
   constructor(private myservice: MyServiceService) {}
   ngOnInit() {
      this.todayDate1 = this.myservice.showTodayDate();
+
+     this.myservice.getData().subscribe((data) => {
+      Object.keys(data).forEach(key => {
+
+        console.log(key, data[key]);
+        //  this.persondata.push(data[key]);
+      });
+      console.log(this.persondata);
+   });
   }
 
 }

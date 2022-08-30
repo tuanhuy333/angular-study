@@ -54,5 +54,9 @@ const routes: Routes = [
 ];
 
 # 9. Service
+ng g service myservice
+
+# 10. HttpClient
+
 
 
